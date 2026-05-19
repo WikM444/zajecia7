@@ -112,3 +112,11 @@ class Manager:
         if apartment_key not in self.apartments:
             raise ValueError("Apartment key does not exist")
         return any([bill for bill in self.bills if bill.apartment == apartment_key and bill.settlement_year == year and bill.settlement_month == month])
+    
+    def bill_extremium(self):
+        minimal = 120.00
+        maximal = 750.00
+        for bill in self.bills:
+            if bill.amount_pln <= maximal and bill.amount_pln >= minimal:
+                return True
+        return False
