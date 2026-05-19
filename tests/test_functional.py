@@ -90,3 +90,8 @@ def test_valid_transfer_values():
     parameters = Parameters()
     manager = Manager(parameters)
     assert manager.bill_extremium() == True
+
+def test_tenants_black_list():
+    parameters = Parameters()
+    manager = Manager(parameters)
+    assert manager.check_if_blacklisted() == True
