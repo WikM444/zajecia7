@@ -1,0 +1,17 @@
+[
+    {
+        "first-name" : "Jan",
+        "last-name" : "Kowalski",
+        "reason" : "zaleglosci"
+    },
+    {
+        "first-name" : "Robert",
+        "last-name" : "Kubica",
+        "reason" : "za szybka platnosc"
+    },
+    {
+        "first-name" : "Anna",
+        "last-name" : "Lewandowska",
+        "reason" : "uszkodzenie mieszkania"
+    }
+]
