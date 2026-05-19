@@ -85,3 +85,8 @@ def test_apartment_has_any_bills():
 
     has_bills = manager.has_any_bills('apart-polanka', 2025, 3)
     assert has_bills == False
+
+def test_valid_transfer_values():
+    parameters = Parameters()
+    manager = Manager(parameters)
+    assert manager.bill_extremium() == True
